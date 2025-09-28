@@ -123,9 +123,9 @@ const Index = () => {
                       <p className="text-gray-300">Видимость через стены</p>
                     </div>
                     <div className="text-center">
-                      <Icon name="Package" size={48} className="mx-auto mb-4" />
-                      <h3 className="text-xl font-semibold mb-2">Предметы</h3>
-                      <p className="text-gray-300">Подсветка лута</p>
+                      <Icon name="Target" size={48} className="mx-auto mb-4" />
+                      <h3 className="text-xl font-semibold mb-2">Триггер бот</h3>
+                      <p className="text-gray-300">По кости</p>
                     </div>
                     <div className="text-center">
                       <Icon name="Zap" size={48} className="mx-auto mb-4" />
@@ -414,11 +414,11 @@ const Index = () => {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-gray-300">
                   <Icon name="MessageCircle" size={16} />
-                  Discord: gtav_cheats
+                  Discord: producertelok
                 </div>
                 <div className="flex items-center gap-2 text-gray-300">
                   <Icon name="Send" size={16} />
-                  Telegram: @gtav_support
+                  Telegram: @roducertelok
                 </div>
               </div>
             </div>
