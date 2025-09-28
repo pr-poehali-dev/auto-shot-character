@@ -430,6 +430,14 @@ const Index = () => {
                 >
                   Поддержка
                 </button>
+                <a
+                  href="https://youtu.be/yvS0AUt0ou8?si=RpYyOK5WcflTymcF"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-gray-300 hover:text-white transition-colors"
+                >
+                  Инструкция
+                </a>
               </div>
             </div>
             <div>
