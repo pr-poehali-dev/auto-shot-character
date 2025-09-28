@@ -377,6 +377,15 @@ const Index = () => {
                   {item.label}
                 </button>
               ))}
+              <a
+                href="https://youtu.be/yvS0AUt0ou8?si=RpYyOK5WcflTymcF"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-3 py-2 rounded-lg transition-colors text-gray-600 hover:text-black hover:bg-gray-100"
+              >
+                <Icon name="BookOpen" size={16} />
+                Инструкция
+              </a>
             </div>
           </div>
         </div>
