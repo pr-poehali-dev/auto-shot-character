@@ -412,10 +412,15 @@ const Index = () => {
             <div>
               <h3 className="font-semibold mb-4">Контакты</h3>
               <div className="space-y-2">
-                <div className="flex items-center gap-2 text-gray-300">
+                <a 
+                  href="https://discord.gg/UVt6QWBm7S"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+                >
                   <Icon name="MessageCircle" size={16} />
                   Discord: producertelok
-                </div>
+                </a>
                 <div className="flex items-center gap-2 text-gray-300">
                   <Icon name="Send" size={16} />
                   Telegram: @roducertelok
