@@ -9,6 +9,7 @@ import Icon from '@/components/ui/icon'
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home')
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const features = [
     {
@@ -387,7 +388,56 @@ const Index = () => {
                 Инструкция
               </a>
             </div>
+
+            {/* Mobile menu button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden p-2 rounded-lg text-gray-600 hover:text-black hover:bg-gray-100"
+            >
+              <Icon name={mobileMenuOpen ? "X" : "Menu"} size={24} />
+            </button>
           </div>
+
+          {/* Mobile menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden border-t border-gray-200 py-4">
+              <div className="space-y-2">
+                {[
+                  { id: 'home', label: 'Главная', icon: 'Home' },
+                  { id: 'features', label: 'Функции', icon: 'Zap' },
+                  { id: 'faq', label: 'FAQ', icon: 'HelpCircle' },
+                  { id: 'support', label: 'Поддержка', icon: 'MessageCircle' },
+                  { id: 'download', label: 'Скачать', icon: 'Download' }
+                ].map((item) => (
+                  <button
+                    key={item.id}
+                    onClick={() => {
+                      setActiveSection(item.id)
+                      setMobileMenuOpen(false)
+                    }}
+                    className={`w-full flex items-center gap-3 px-4 py-3 text-left transition-colors ${
+                      activeSection === item.id 
+                        ? 'bg-black text-white' 
+                        : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                    }`}
+                  >
+                    <Icon name={item.icon} size={20} />
+                    {item.label}
+                  </button>
+                ))}
+                <a
+                  href="https://youtu.be/yvS0AUt0ou8?si=RpYyOK5WcflTymcF"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center gap-3 px-4 py-3 text-left transition-colors text-gray-600 hover:text-black hover:bg-gray-100"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <Icon name="BookOpen" size={20} />
+                  Инструкция
+                </a>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
