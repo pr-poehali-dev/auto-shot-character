@@ -284,15 +284,39 @@ const Index = () => {
               <h1 className="text-4xl font-bold text-black mb-8">Скачать чит</h1>
               <Card className="border-gray-200">
                 <CardHeader>
-                  <CardTitle className="text-3xl text-black">GTAV Premium Cheat</CardTitle>
+                  <CardTitle className="text-3xl text-black">Triggerbot</CardTitle>
                   <CardDescription className="text-gray-600">
-                    Полный доступ ко всем функциям
+                    Выберите подходящий тариф
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-center mb-8">
-                    <div className="text-5xl font-bold text-black mb-2">₽1,990</div>
-                    <p className="text-gray-600">Единовременная покупка</p>
+                  <div className="grid md:grid-cols-2 gap-6 mb-8">
+                    <div className="text-center p-6 border border-gray-200 rounded-lg">
+                      <h3 className="text-xl font-bold text-black mb-2">Недельная подписка</h3>
+                      <div className="text-3xl font-bold text-black mb-2">₽200</div>
+                      <p className="text-gray-600 mb-4">7 дней доступа</p>
+                      <a 
+                        href="https://t.me/send?start=IV4k18Na61cP" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block w-full bg-black text-white hover:bg-gray-800 py-3 px-4 rounded-lg transition-colors text-center"
+                      >
+                        Купить недельную
+                      </a>
+                    </div>
+                    <div className="text-center p-6 border border-gray-200 rounded-lg">
+                      <h3 className="text-xl font-bold text-black mb-2">Месячная подписка</h3>
+                      <div className="text-3xl font-bold text-black mb-2">₽400</div>
+                      <p className="text-gray-600 mb-4">30 дней доступа</p>
+                      <a 
+                        href="https://t.me/send?start=IV4k18Na61cP" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block w-full bg-black text-white hover:bg-gray-800 py-3 px-4 rounded-lg transition-colors text-center"
+                      >
+                        Купить месячную
+                      </a>
+                    </div>
                   </div>
                   
                   <div className="space-y-4 mb-8">
@@ -312,13 +336,8 @@ const Index = () => {
                     </div>
                   </div>
                   
-                  <Button className="w-full bg-black text-white hover:bg-gray-800 py-6 text-lg">
-                    <Icon name="Download" className="mr-2" size={20} />
-                    Купить и скачать
-                  </Button>
-                  
-                  <p className="text-sm text-gray-500 mt-4">
-                    Безопасная оплата через PayPal и банковские карты
+                  <p className="text-sm text-gray-500 text-center">
+                    Безопасная оплата через Telegram Bot
                   </p>
                 </CardContent>
               </Card>
@@ -383,7 +402,7 @@ const Index = () => {
                 <span className="font-bold text-xl">RageThresh</span>
               </div>
               <p className="text-gray-300">
-                Лучшие читы для GTA V с профессиональной поддержкой
+                Лучший triggerbot по кости
               </p>
             </div>
             <div>
